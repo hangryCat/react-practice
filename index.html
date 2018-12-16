@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>First React App</title>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   </head>
+
   <body>
     <div id="app"></div>
+
     <script type="text/javascript">
       const headerElement = React.createElement(
-      'h1',
-      { id: 'header' },
-      'Meo'
+        'h1', {
+          id: 'header'
+        },
+        'Hello World'
       )
 
-      console.log(headerElement);
+      ReactDOM.render(headerElement, document.getElementById('app'));
     </script>
   </body>
+
 </html>
