@@ -8,7 +8,13 @@
   <body>
     <div id="app"></div>
     <script type="text/javascript">
-      console.log('React', window.React)
+      const headerElement = React.createElement(
+      'h1',
+      { id: 'header' },
+      'Meo'
+      )
+
+      console.log(headerElement);
     </script>
   </body>
 </html>
